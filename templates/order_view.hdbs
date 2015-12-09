@@ -1,0 +1,49 @@
+<input id="dw-searcher" type="text" /> <button class="dw-search"><i class="icon icon-search"></i></button>
+<h3 class="dw-header">{{t "order_id"}} #{{order.summary.id}} <span class="dw-status label label-success">{{order.summary.status}}</span></h3>
+<div class="order_status">
+	<p><span class="dw-label">{{t "sent_at"}}:</span> {{order.summary.sent_at}}</p>
+	<p><span class="dw-label">{{t "paid_at"}}:</span> {{order.summary.marked_as_paid_at}}</p>
+	<p><span class="dw-label">{{t "confirmed_at"}}:</span> {{order.summary.confirmed_at}}</p>
+</div>
+<h3 class="dw-header">{{t "order_summary"}}</h3>
+<table class="table dw-table">
+	<thead>
+		<th>{{t "product_name"}}</th>
+		<th>{{t "quantity"}}</th>
+		<th>{{t "cents"}}</th>
+		<th>{{t "shipping_itl"}}</th>
+		<th>{{t "shipping_domestic"}}</th>
+	</thead>
+	<tbody>
+		{{#each order.order_details}}
+		<tr>
+			<td>{{product_name}}</td>
+			<td>{{quantity}}</td>
+			<td>{{cents}}</td>
+			<td>{{shipping_itl}}</td>
+			<td>{{shipping_domestic}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
+<div class="payment">
+	<p><span class="dw-label">{{t "payment_type"}}:</span> {{order.summary.payment_type}}</p>
+	<p><span class="dw-label">{{t "currency"}}:</span> {{order.summary.currency}}</p>
+	<p><span class="dw-label">{{t "paid"}}:</span> {{order.summary.paid_cents}}</p>
+</div>
+<h3 class="dw-header">{{t "invoice_address"}}</h3>
+<div class="well">
+	<p><strong>{{order.billing_address.lastname}}, {{order.billing_address.firstname}}</strong></p>
+	<p>{{order.billing_address.street}}</p>
+	<p>{{order.billing_address.line2}}</p>
+	<p>{{order.billing_address.line3}}</p>
+	<p>{{order.billing_address.zip}}, {{order.billing_address.city}}, {{order.billing_address.country}}</p>
+</div>
+<h3 class="dw-header">{{t "shipping_address"}}</h3>
+<div class="well">
+	<p><strong>{{order.shipping_address.lastname}}, {{order.shipping_address.firstname}}</strong></p>
+	<p>{{order.shipping_address.street}}</p>
+	<p>{{order.shipping_address.line2}}</p>
+	<p>{{order.shipping_address.line3}}</p>
+	<p>{{order.shipping_address.zip}}, {{order.shipping_address.city}}, {{order.shipping_address.country}}</p>
+</div>

@@ -1,0 +1,7 @@
+<div class="alert alert-danger" role="alert">
+  <i class="icon icon-exclamation-sign"></i>
+  <span class="sr-only">{{t "error"}}:</span>
+  {{t "not_found"}}
+</div>
+
+<input id="dw-searcher" type="text" /> <button class="dw-search"><i class="icon icon-search"></i></button>

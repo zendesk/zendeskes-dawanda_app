@@ -1,0 +1,23 @@
+span.dw-label {
+    font-weight: bold;
+}
+h3.dw-header {
+    color: darkcyan;
+    margin: 5px 0;
+}
+.dw-status {
+    margin: 5px;
+    position: absolute;
+}
+#dw-searcher{
+    width: 86%;
+    margin: 0 -5px 0 3px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.dw-search {
+    background-color: #78A300;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

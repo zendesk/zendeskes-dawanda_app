@@ -1,0 +1,8 @@
+{  
+    "ticket_fields": {
+        "order_id": {
+          "type": "text",
+          "title": "Order ID"
+        }   
+    }
+}

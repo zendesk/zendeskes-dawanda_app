@@ -1,0 +1,27 @@
+{
+  "app": {
+    "description": "App that loads Order information from Dawanda.",
+    "instructions": "To install the app:\n1 - You just need to add your API token from dawanda. For that, follow the instructions here: http://en.dawanda.com/apps/new\n2 - Add the auto-generated custom field \"Order ID\" to all your forms.\n\nTo use the app:\n\nThere are two different ways to retrieve an order detail.\n1. Use the custom field.\n2. Search for the order ID on the search bar within the app.",
+    "parameters":{
+      "dawanda_token":{"label":"API Token","helpText":"Your Dawanda API Token"}
+      }
+  },
+  "order_id":"Order ID",
+  "sent_at":"Sent at",
+  "paid_at":"Paid at",
+  "confirmed_at":"Confirmed at",
+  "order_summary":"Order Summary",
+  "product_name": "Product",
+  "quantity":"QTY",
+  "cents":"Cents",
+  "shipping_itl":"Shipping ITL",
+  "shipping_domestic":"Shipping Domestic",
+  "payment_type":"Payment type",
+  "currency": "Currency",
+  "paid":"Paid",
+  "invoice_address":"Invoice Address",
+  "shipping_address":"Shipping Address",
+  "error":"Error",
+  "not_found":"No order found"
+
+}
