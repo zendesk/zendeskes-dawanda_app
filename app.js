@@ -40,9 +40,10 @@
       }
     },
     search: function(){
-      this.switchTo('loading');
       var val = this.$('#dw-searcher').val();
       this.ajax('retrieveOrder',val);
+      this.switchTo('loading');
+      
     },
     loadOrder: function(d){
       var data = this.buildOrder(xml2json.tools.parseXml(d));
